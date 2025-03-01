@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emon's DevBoard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F4F7FF] pt-3 pb-10">
+    <!-- nav section  -->
+    <section class="mx-[5%]">
+      <nav class="flex flex-row justify-between bg-white p-3 rounded-xl">
+        <div class="flex flex-row gap-2">
+          <img src="images/logo.png" alt="" />
+          <h1 class="text-3xl my-auto">
+            Dev<span class="font-bold">Board</span>
+          </h1>
+        </div>
+
+        <div class="flex flex-row gap-5 my-auto">
+          <div class="flex flex-row gap-2 my-auto bg-[#F4F7FF] rounded-xl p-1">
+            <div><img src="images/checkbox.png" alt="" /></div>
+            <div class="flex my-auto">
+              <h1 id="total-task" class="font-bold text-xl">23</h1>
+            </div>
+          </div>
+
+          <div
+            id="color"
+            class="bg-[#F4F7FF] rounded-xl p-1 flex justify-center"
+          >
+            <img class="w-2/3" src="images/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="mt-5 mx-[5%] rounded-xl grid grid-cols-4 gap-5">
+      <section class="col-span-3 bg-white p-5 rounded-xl">
+        <section class="grid grid-cols-4 gap-4 mb-0">
+          <!-- Task Assigned part -->
+          <div class="flex flex-row gap-3 p-6 bg-[#F4F7FF] rounded-xl">
+            <div class="my-auto p-3 rounded-full bg-white">
+              <img class="" src="images/checkbox.png" alt="" />
+            </div>
+
+            <div class="my-auto">
+              <h3>Task Assigned</h3>
+              <h1 id="main-task" class="font-bold text-xl">6</h1>
+            </div>
+          </div>
+
+          <div
+            id="discovery"
+            class="col-span-2 p-6 rounded-2xl flex flex-row my-auto bg-[linear-gradient(130.7deg,_rgb(55,_82,_253)_0.419%,_rgb(108,_127,_250)_52.66%,_rgb(155,_168,_248)_99.733%)] gap-3"
+          >
+            <div>
+              <img src="images/board.png" alt="" />
+            </div>
+            <p class="my-auto font-bold text-2xl text-white">
+              Discover Something New Today!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-3 p-6 bg-[#F4F7FF] rounded-xl">
+            <div class="my-auto p-3 rounded-full bg-white">
+              <img class="" src="images/calender.png" alt="" />
+            </div>
+
+            <div class="my-auto">
+              <h3 id="time-1"></h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid grid-cols-3 mt-5 gap-8">
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-1/4 py-1 rounded-lg text-center">
+              ShopEase
+            </div>
+            <div><h2 class="font-bold">Fix Mobile Button Issue</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                The mobile button issue often occurs due to insufficient size,
+                poor spacing, or unresponsive design.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-1-button"
+                  class="btn btn-sm bg-[#3752FD] hover:bg-[#3752FD] hover:scale-110 text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-1/4 py-1 rounded-lg text-center">
+              CloudSync
+            </div>
+            <div><h2 class="font-bold">Add Dark Mode</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                Dark mode enhances user experience by reducing eye strain and
+                conserving battery on screens.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-2-button"
+                  class="btn btn-sm hover:scale-110 bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-1/4 py-1 rounded-lg text-center">
+              SwiftPay
+            </div>
+            <div><h2 class="font-bold">Optimize Home page</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                Optimizing the home page improves loading speed, enhances user
+                experience, and performance.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-3-button"
+                  class="btn btn-sm hover:scale-110 bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-1/4 py-1 rounded-lg text-center">Meta</div>
+            <div><h2 class="font-bold">Add new emoji 🤲</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                Adding new emojis can enhance expression, adding fun, clarity,
+                and visual appeal to communication.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-4-button"
+                  class="btn btn-sm hover:scale-110 bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-2/4 py-1 rounded-lg text-center">
+              Google LLC
+            </div>
+            <div><h2 class="font-bold">Integrate OpenAI API</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                Integrating OpenAI API allows developers to enhance applications
+                with advanced language models.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-5-button"
+                  class="btn btn-sm hover:scale-110 bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-[#F4F7FF] p-4 gap-4 rounded-lg">
+            <div class="bg-white w-1/4 py-1 rounded-lg text-center">
+              Glassdoar
+            </div>
+            <div><h2 class="font-bold">Improve Job searching</h2></div>
+            <div>
+              <p class="text-gray-400 bg-white text-center rounded-lg p-2">
+                Improving job searching involves utilizing advanced filters,
+                networking, and personalized applications.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <div>
+                <h4 class="text-gray-400">Deadline</h4>
+
+                <h2 class="font-semibold">21 March 2025</h2>
+              </div>
+
+              <div class="flex">
+                <button
+                  id="card-6-button"
+                  class="btn btn-sm hover:scale-110 bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="bg-white rounded-xl">
+        <div class="flex gap-2 justify-center p-3">
+          <img src="images/activity.png" alt="" />
+          <div class="font-bold">Activity Log</div>
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            class="btn btn-sm hover:scale-110 font-bold bg-[#3752FD] hover:bg-[#3752FD] text-white mt-auto"
+          >
+            Clear History
+          </button>
+        </div>
+      </section>
+    </section>
+    <script src="jsFiles/card.js"></script>
+
+   
+  </body>
+</html>
