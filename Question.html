@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-red-400">
+  <body class="bg-[#F4F7FF] h-screen ">
     <section class="mx-[5%] p-3 rounded-xl">
       <nav>
         <nav class="flex flex-row justify-between bg-white p-3 rounded-xl">
@@ -33,6 +33,45 @@
         </nav>
       </nav>
     </section>
+
+<section class="mx-[5%] p-3 flex flex-col gap-2">
+
+  <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+    <div class="collapse-content text-sm">The different ways to select an element in the DOM are, getElementById(), getElementsByclass(), getElementByTagName() etc.. </div>
+  </div>
+
+
+  <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+    <div class="collapse-content text-sm"> The difference between innerHTML, innerText, and textContent are, innerHTML change or catch  certain container inside html, innerText change or catch certain container innner text and textContent change or catch all text includin hidden text.  </div>
+  </div>
+
+
+  <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+    <div class="collapse-content text-sm">event delegation in the DOM is a thing in javaScrip that parent element is used to handle child elements.</div>
+  </div>
+
+  
+  <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+    <div class="collapse-content text-sm">Event bubbling is task when event happen on a element, it go up to all parent elements until it reach document.</div>
+  </div>
+
+  <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+    <div class="collapse-content text-sm"> I will create an element using document.createElement(tag name), add element using document.body.appendChild(class name), remove element using parent.removeChild(child class/id name).</div>
+  </div>
+
+
+</section>
+
 
     <script src="jsFiles/logout.js"></script>
   </body>
