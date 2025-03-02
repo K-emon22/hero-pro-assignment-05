@@ -5,7 +5,7 @@ function leftMainTask(assignedTaskIdd) {
   document.getElementById(assignedTaskIdd).innerText = leftMainTask;
 
   if (leftMainTask === 0) {
-    alert("Congrats!! You have completed all the current task");
+    alert("Congrats!! You have completed all the current task.");
   }
 }
 
@@ -17,14 +17,7 @@ function TotalMainTask(totalTaskIdd, disabled) {
   document.getElementById(disabled).disabled = true;
 }
 
-function getElementById(
-  buttonId,
-  assignedTaskId,
-  totalTaskId,
-  disabled,
-  doneTaskId,
-  buttontextchange
-) {
+function getElementById(buttonId,assignedTaskId,totalTaskId,disabled,doneTaskId,buttontextchange) {
   document.getElementById(buttonId).addEventListener("click", function () {
     document.getElementById(buttontextchange).innerText = "completed";
     let doneTask = document.getElementById(doneTaskId).innerText;
