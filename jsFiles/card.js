@@ -79,7 +79,7 @@ function workDoneSummery(id1, id2) {
     });
 
     let p = document.createElement("p");
-    p.innerHTML = `<p class=" px-5 bg-[#F4F7FF] rounded-lg mx-[5%] text-center"> You have Completed the <b>${doneTask}</b>  at ${time}.</p>`;
+    p.innerHTML = `<p class=" px-5 bg-[#F4F7FF] rounded-lg mx-[5%] text-center"> You have Completed the task <b>${doneTask}</b>  at ${time}.</p>`;
     document.getElementById("hide-unhide").appendChild(p);
   });
 }
