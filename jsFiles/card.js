@@ -17,9 +17,16 @@ function TotalMainTask(totalTaskIdd, disabled) {
   document.getElementById(disabled).disabled = true;
 }
 
-function getElementById(buttonId, assignedTaskId, totalTaskId, disabled,doneTaskId) {
+function getElementById(
+  buttonId,
+  assignedTaskId,
+  totalTaskId,
+  disabled,
+  doneTaskId,
+  buttontextchange
+) {
   document.getElementById(buttonId).addEventListener("click", function () {
-
+    document.getElementById(buttontextchange).innerText = "completed";
     let doneTask = document.getElementById(doneTaskId).innerText;
     alert(`${doneTask} Updated Successfully...`);
     leftMainTask(assignedTaskId);
@@ -27,12 +34,12 @@ function getElementById(buttonId, assignedTaskId, totalTaskId, disabled,doneTask
   });
 }
 
-getElementById("card-1-button", "main-task", "total-task", "card-1-button", "fix");
-getElementById("card-2-button", "main-task", "total-task", "card-2-button", "dark");
-getElementById("card-3-button", "main-task", "total-task", "card-3-button", "home-page");
-getElementById("card-4-button", "main-task", "total-task", "card-4-button", "emoji");
-getElementById("card-5-button", "main-task", "total-task", "card-5-button", "open-ai");
-getElementById("card-6-button", "main-task", "total-task", "card-6-button", "job-searching");
+getElementById("card-1-button", "main-task", "total-task", "card-1-button", "fix","card-1-button");
+getElementById("card-2-button", "main-task", "total-task", "card-2-button", "dark" ,"card-2-button");
+getElementById("card-3-button", "main-task", "total-task", "card-3-button", "home-page","card-3-button");
+getElementById("card-4-button", "main-task", "total-task", "card-4-button", "emoji","card-4-button");
+getElementById("card-5-button", "main-task", "total-task", "card-5-button", "open-ai","card-5-button");
+getElementById("card-6-button", "main-task", "total-task", "card-6-button", "job-searching","card-6-button");
 
 
 document.getElementById("color").addEventListener("click", function () {
